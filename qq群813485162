@@ -1,4 +1,24 @@
-local Window = OrionLib:MakeWindow({Name ="BS脚本(增添)1.4", HidePremium = false, SaveConfig = true,IntroText = "BS中心(增添)1.4开启", ConfigFolder = "BS中心(增添)1.4"})
+--如果你看见这段话,那么证明此脚本被开源或公开
+loadstring(game:HttpGet("https://pastebin.com/raw/9fFu43FF"))()
+
+game:GetService("StarterGui"):SetCore("SendNotification",{ Title = "纯缝合勿喷"; Text ="纯缝合"; Duration = 4; })
+
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "BS黑洞中心",
+    Text = "正在加载（反挂机已开启）",
+    Duration = 5, 
+})
+print("反挂机开启")
+		local vu = game:GetService("VirtualUser")
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		   wait(1)
+		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		end)
+local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/iXGNieAz'))()
+local Window = OrionLib:MakeWindow({Name ="BS黑洞中心", HidePremium = false, SaveConfig = true,IntroText = "BS黑洞中心开启", ConfigFolder = "BS黑洞中心"})
 
 local Tab = Window:MakeTab({
     Name = "我想对你们说的话",
@@ -7407,28 +7427,28 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-local Tab = Window:MakeTab({
-Name=“短信模拟器”，
+  Name = "2英文",
+  Callback = function()
   loadstring(game:HttpGet("https://raw.githubusercontent.com/chiper1z/Grace/refs/heads/main/Protected_8122096522936905.txt"))()
-Icon = "rbxassetid://7734068321",
+  end
 })
 
 Tab:AddButton({
-PremiumOnly = false
-Name = "1",
+  Name = "3要卡密",
+  Callback = function()
   loadstring(game:HttpGet("https://rawscripts.net/raw/Grace-Auto-Farm-And-More-23940"))()
-回调=function（）
+  end
 })
 
 Tab:AddButton({
-结束
-local Tab = Window:MakeTab({
+  Name = "XK（超好用）",
+  Callback = function()
   loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoXuAnZang/XKscript/refs/heads/main/GraceXJ.lua"))()
-Name=“法宝模拟器”，
+  end
 })
 
-Icon = "rbxassetid://7734068321",
-PremiumOnly = false
+local Section = Tab:AddSection({
+	Name = "其他"
 })
 
 Tab:AddButton({
@@ -7452,23 +7472,23 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-Name=“破解所有成就（mayoto mayoto）”，
-回调=function（）
-结束
+    Name = "法宝模拟器",
+    Icon = "rbxassetid://7734068321",
+    PremiumOnly = false
 })
 
 Tab:AddButton({
-突耳
-按键移动焦点。或者，使用
+  Name = "1",
+  Callback = function()
   loadstring(game:HttpGet("https://raw.githubusercontent.com/FreeRobloxScripts/anime-fighting/main/simulator"))()
-欧洲心脏病学会
+  end
 })
 
 Tab:AddButton({
-然后
-突耳
+   Name = "法宝模拟器2",
+   Callback = function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/zhanghuihuihuil/Script/main/%E6%B3%95%E5%AE%9D%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%B1%89%E5%8C%96'))()
-移动到页面上的下一个交互元素。
+   end
 })
 
 local Tab = Window:MakeTab({
@@ -7481,19 +7501,19 @@ Tab:AddButton({
   Name = "nufar hub",
   Callback = function()
   loadstring(game:HttpGet(('https://raw.githubusercontent.com/rbIxscriptsnet/unfair/main/rblxhub.lua'),true))()
-回调=function（）
+  end
 })
 
 Tab:AddButton({
-结束
-Name=“XK（超好用）”，
+  Name = "szze hub",
+  Callback = function()
   loadstring(game:HttpGet('https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/old.lua'))()
-回调=function（）
+  end
 })
 
 Tab:AddButton({
-结束
-local Section = Tab:AddSection({
+  Name = "scow hub",
+  Callback = function()
   loadstring(game:HttpGet("https://raw.githubusercontent.com/scowscripts/scowsscripts/main/PLSCRY/Script",true))()
-Name=“其他”
+  end
 })
